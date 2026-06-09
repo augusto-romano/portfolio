@@ -48,7 +48,7 @@ export default function Navbar() {
               <Code2 className="w-4 h-4 text-white" />
             </div>
             <span className="font-bold text-sm tracking-tight text-white/90 group-hover:text-white transition-colors">
-              AS<span className="gradient-text">.</span>
+              Portfólio - Augusto Romano Segantini<span className="gradient-text">.</span>
             </span>
           </motion.a>
 

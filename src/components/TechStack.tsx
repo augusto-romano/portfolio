@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
 import {
-  SiReact, SiVuedotjs, SiJavascript, SiTypescript, SiHtml5, SiCss,
-  SiNodedotjs, SiExpress, SiPhp, SiCodeigniter,
-  SiPostgresql, SiMysql, SiSqlite,
-  SiDocker, SiGit, SiGitlab,
+  SiReact, SiVuedotjs, SiTypescript, SiVite, SiTailwindcss, SiMui, SiAxios,
+  SiNodedotjs, SiExpress, SiDotnet, SiFlask, SiPython, SiJsonwebtokens, SiPostman,
+  SiPostgresql, SiMysql, SiPrisma, SiPandas,
+  SiFlutter, SiDart, SiAndroid,
+  SiTensorflow, SiKeras, SiOpencv, SiScikitlearn,
+  SiHtml5, SiWhatsapp,
 } from 'react-icons/si';
+import { Database, Code2, Braces, Bot, Workflow, MessageSquare } from 'lucide-react';
 import AnimatedSection, { staggerContainer, staggerItem } from './ui/AnimatedSection';
 
 const categories = [
@@ -16,10 +19,12 @@ const categories = [
     techs: [
       { name: 'React', icon: SiReact, color: '#61dafb' },
       { name: 'Vue.js', icon: SiVuedotjs, color: '#42d392' },
-      { name: 'JavaScript', icon: SiJavascript, color: '#f7df1e' },
       { name: 'TypeScript', icon: SiTypescript, color: '#3178c6' },
-      { name: 'HTML5', icon: SiHtml5, color: '#e34f26' },
-      { name: 'CSS3', icon: SiCss, color: '#1572b6' },
+      { name: 'Vite', icon: SiVite, color: '#646cff' },
+      { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06b6d4' },
+      { name: 'Material UI', icon: SiMui, color: '#007fff' },
+      { name: 'Axios', icon: SiAxios, color: '#5a29e4' },
+      
     ],
   },
   {
@@ -29,9 +34,11 @@ const categories = [
     border: 'rgba(52,211,153,0.15)',
     techs: [
       { name: 'Node.js', icon: SiNodedotjs, color: '#68a063' },
-      { name: 'Express', icon: SiExpress, color: '#ffffff' },
-      { name: 'PHP', icon: SiPhp, color: '#777bb4' },
-      { name: 'CodeIgniter', icon: SiCodeigniter, color: '#ee4323' },
+      { name: 'Express.js', icon: SiExpress, color: '#ffffff' },
+      { name: 'ASP.NET Core', icon: SiDotnet, color: '#512bd4' },
+      { name: 'Flask', icon: SiFlask, color: '#ffffff' },
+      { name: 'REST API', icon: SiPostman, color: '#ff6c37' },
+      { name: 'JWT', icon: SiJsonwebtokens, color: '#ffffff' },
     ],
   },
   {
@@ -40,20 +47,58 @@ const categories = [
     gradient: 'from-violet-400/10 to-purple-400/10',
     border: 'rgba(139,92,246,0.15)',
     techs: [
-      { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
       { name: 'MySQL', icon: SiMysql, color: '#4479a1' },
-      { name: 'SQL Server', icon: SiSqlite, color: '#003b57' },
+      { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+      { name: 'Prisma ORM', icon: SiPrisma, color: '#2d3748' },
+      { name: 'Entity Framework', icon: SiDotnet, color: '#512bd4' },
+      { name: 'Pandas', icon: SiPandas, color: '#150458' },
     ],
   },
   {
-    label: 'DevOps',
-    color: '#2496ed',
-    gradient: 'from-sky-400/10 to-blue-400/10',
-    border: 'rgba(56,189,248,0.15)',
+    label: 'Mobile',
+    color: '#02569b',
+    gradient: 'from-cyan-400/10 to-blue-400/10',
+    border: 'rgba(6,182,212,0.15)',
     techs: [
-      { name: 'Docker', icon: SiDocker, color: '#2496ed' },
-      { name: 'Git', icon: SiGit, color: '#f05032' },
-      { name: 'GitLab CI/CD', icon: SiGitlab, color: '#fc6d26' },
+      { name: 'Flutter', icon: SiFlutter, color: '#02569b' },
+      { name: 'Dart', icon: SiDart, color: '#0175c2' },
+      
+    ],
+  },
+  {
+    label: 'AI & Machine Learning',
+    color: '#ff6f00',
+    gradient: 'from-orange-400/10 to-red-400/10',
+    border: 'rgba(251,146,60,0.15)',
+    techs: [
+      { name: 'Python', icon: SiPython, color: '#3776ab' },
+      { name: 'TensorFlow', icon: SiTensorflow, color: '#ff6f00' },
+      { name: 'Keras', icon: SiKeras, color: '#d00000' },
+      { name: 'MobileNetV2', icon: Bot, color: '#8b5cf6' },
+      { name: 'Machine Learning', icon: SiScikitlearn, color: '#f89939' },
+      { name: 'Computer Vision', icon: SiOpencv, color: '#5c3ee8' },
+    ],
+  },
+  {
+    label: 'Automação',
+    color: '#8b5cf6',
+    gradient: 'from-purple-400/10 to-pink-400/10',
+    border: 'rgba(168,85,247,0.15)',
+    techs: [
+      { name: 'Web Scraping', icon: Workflow, color: '#a855f7' },
+      { name: 'Requests', icon: SiPython, color: '#3776ab' },
+      { name: 'BeautifulSoup', icon: SiPython, color: '#3776ab' },
+      { name: 'HTML Parsing', icon: SiHtml5, color: '#e34f26' },
+      
+    ],
+  },
+  {
+    label: 'Integrações',
+    color: '#25d366',
+    gradient: 'from-green-400/10 to-emerald-400/10',
+    border: 'rgba(34,197,94,0.15)',
+    techs: [
+      { name: 'WhatsApp Web JS', icon: SiWhatsapp, color: '#25d366' },
     ],
   },
 ];
@@ -76,10 +121,10 @@ export default function TechStack() {
           </span>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white mt-4">
             Ferramentas que{' '}
-            <span className="gradient-text">domino</span>
+            <span className="gradient-text">ja utilizei</span>
           </h2>
           <p className="text-base mt-4 max-w-lg mx-auto" style={{ color: '#64748b' }}>
-            Tecnologias modernas e battle-tested que uso para construir produtos de alto nível.
+            Tecnologias modernas que uso para construir produtos de alto nível.
           </p>
         </AnimatedSection>
 

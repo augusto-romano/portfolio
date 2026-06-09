@@ -13,7 +13,7 @@ const floatingBadges = [
   { label: 'Node.js', color: '#68a063', bg: 'rgba(104,160,99,0.08)', border: 'rgba(104,160,99,0.15)' },
   { label: 'TypeScript', color: '#3178c6', bg: 'rgba(49,120,198,0.08)', border: 'rgba(49,120,198,0.15)' },
   { label: 'PostgreSQL', color: '#336791', bg: 'rgba(51,103,145,0.08)', border: 'rgba(51,103,145,0.15)' },
-  { label: 'Docker', color: '#2496ed', bg: 'rgba(36,150,237,0.08)', border: 'rgba(36,150,237,0.15)' },
+  { label: 'C#', color: '#2496ed', bg: 'rgba(36,150,237,0.08)', border: 'rgba(36,150,237,0.15)' },
 ];
 
 const textVariants = {
