@@ -3,11 +3,11 @@ import {
   SiReact, SiVuedotjs, SiTypescript, SiVite, SiTailwindcss, SiMui, SiAxios,
   SiNodedotjs, SiExpress, SiDotnet, SiFlask, SiPython, SiJsonwebtokens, SiPostman,
   SiPostgresql, SiMysql, SiPrisma, SiPandas,
-  SiFlutter, SiDart, SiAndroid,
+  SiFlutter, SiDart,
   SiTensorflow, SiKeras, SiOpencv, SiScikitlearn,
   SiHtml5, SiWhatsapp,
 } from 'react-icons/si';
-import { Database, Code2, Braces, Bot, Workflow, MessageSquare } from 'lucide-react';
+import {  Bot, Workflow, } from 'lucide-react';
 import AnimatedSection, { staggerContainer, staggerItem } from './ui/AnimatedSection';
 
 const categories = [
